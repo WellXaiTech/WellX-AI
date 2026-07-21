@@ -1,90 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WellX AI</title>
+document.addEventListener("DOMContentLoaded", () => {
 
-<link rel="stylesheet" href="style.css">
+const input = document.querySelector(".chat-box input");
 
-</head>
+const placeholders = [
+"Message WellXAI",
+"Ask anything...",
+"Research with WellXAI",
+"Generate code",
+"Create images",
+"Translate languages",
+"Analyze documents",
+"Build websites",
+"Write emails",
+"Solve math",
+"Plan your business",
+"Create presentations",
+"Summarize files",
+"Explain programming"
+];
 
-<body>
+let i = 0;
 
-<header>
+setInterval(() => {
 
-<nav>
+if(document.activeElement !== input){
 
-<div class="logo">
-WellX<span>Chat</span>
-</div>
+input.placeholder = placeholders[i];
 
-<ul>
+i++;
 
-<li><a href="#">Research</a></li>
-<li><a href="#">Products</a></li>
-<li><a href="#">Business</a></li>
-<li><a href="#">Developers</a></li>
-<li><a href="#">Company</a></li>
-<li><a href="#">Foundation</a></li>
+if(i >= placeholders.length){
 
-</ul>
+i = 0;
 
-<div class="right">
+}
 
-<a href="#" class="login">
-Log in
-</a>
+}
 
-<a href="#" class="button">
-Try WellXChat
-</a>
+},2500);
 
-</div>
-
-</nav>
-
-</header>
-
-<section class="hero">
-
-<p class="small-title">
-WellX AI | Research & Deployment
-</p>
-
-<h1>
-What can I help with?
-</h1>
-
-<div class="chat-box">
-
-<input
-type="text"
-placeholder="Message WellXChat">
-
-<button>
-➜
-</button>
-
-</div>
-
-<div class="actions">
-
-<button>Talk with WellXChat</button>
-
-<button>Research</button>
-
-<button>API Platform</button>
-
-<button>Stories</button>
-
-<button>More</button>
-
-</div>
-
-</section>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+});
