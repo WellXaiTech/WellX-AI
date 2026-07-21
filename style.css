@@ -233,4 +233,130 @@ header{
         font-size:12px;
         padding:9px 14px;
     }
+} /* =========================
+   FINAL POLISH
+========================= */
+
+.logo{
+    cursor:pointer;
+    user-select:none;
+}
+
+.logo span{
+    color:#000;
+    font-weight:800;
+}
+
+.hero{
+    animation:fadeUp .6s ease;
+}
+
+.chat-box{
+    transition:.25s;
+}
+
+.chat-box:hover{
+    transform:translateY(-2px);
+}
+
+.chat-box textarea{
+    line-height:1.6;
+}
+
+.send-btn i{
+    font-size:14px;
+}
+
+.try-btn,
+.quick-actions button,
+.send-btn{
+    transition:all .25s ease;
+}
+
+.try-btn:hover{
+    transform:translateY(-2px);
+}
+
+.quick-actions button:hover{
+    transform:translateY(-2px);
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* Large Screens */
+
+@media(min-width:1400px){
+
+    .hero{
+        max-width:780px;
+    }
+
+}
+
+/* Tablet */
+
+@media(max-width:768px){
+
+    .menu{
+        display:none;
+    }
+
+    .navbar{
+        justify-content:space-between;
+    }
+
+    .hero{
+        padding-top:120px;
+        max-width:92%;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:480px){
+
+    .logo{
+        font-size:24px;
+    }
+
+    .login-btn{
+        display:none;
+    }
+
+    .try-btn{
+        padding:10px 14px;
+        font-size:13px;
+    }
+
+    .hero h1{
+        font-size:28px;
+    }
+
+    .chat-box textarea{
+        height:95px;
+        border-radius:20px;
+    }
+
+    .send-btn{
+        width:34px;
+        height:34px;
+    }
+
 }
