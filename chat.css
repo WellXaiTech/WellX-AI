@@ -1,6 +1,4 @@
-body{
-    background:red !important;
-}
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -12,7 +10,7 @@ body{
     color:#111;
 }
 
-.container{
+.app{
     display:flex;
     height:100vh;
 }
@@ -20,8 +18,8 @@ body{
 /* Sidebar */
 
 .sidebar{
-    width:270px;
-    background:#f8f8f8;
+    width:260px;
+    background:#f7f7f8;
     border-right:1px solid #e5e5e5;
     padding:20px;
     display:flex;
@@ -36,36 +34,28 @@ body{
 
 .new-chat{
     width:100%;
+    padding:14px;
     border:none;
+    border-radius:12px;
     background:#111;
     color:#fff;
-    padding:14px;
-    border-radius:12px;
     cursor:pointer;
     font-size:15px;
-    margin-bottom:25px;
 }
 
-.new-chat:hover{
-    background:#333;
-}
-
-.history p{
-    color:#777;
-    font-size:13px;
-    margin-bottom:12px;
+.history{
+    margin-top:25px;
 }
 
 .history button{
     width:100%;
+    padding:12px;
     border:none;
     background:transparent;
     text-align:left;
-    padding:12px;
     border-radius:10px;
     cursor:pointer;
-    font-size:15px;
-    margin-bottom:6px;
+    margin-bottom:8px;
 }
 
 .history button:hover{
@@ -74,13 +64,13 @@ body{
 
 /* Main */
 
-.chat-area{
+.main{
     flex:1;
     display:flex;
     flex-direction:column;
-} /* Top Bar */
+} /* Header */
 
-.topbar{
+.header{
     height:70px;
     padding:0 30px;
     border-bottom:1px solid #e5e5e5;
@@ -90,20 +80,19 @@ body{
     align-items:center;
 }
 
-.topbar h2{
+.header h2{
     font-size:22px;
     font-weight:700;
 }
 
-.top-icons{
+.icons{
     display:flex;
     gap:18px;
     font-size:20px;
-    cursor:pointer;
 }
 
-.top-icons i:hover{
-    color:#555;
+.icons i{
+    cursor:pointer;
 }
 
 /* Messages */
@@ -114,24 +103,23 @@ body{
     overflow-y:auto;
 }
 
-.ai-message{
+.ai{
     max-width:700px;
     background:#f4f4f4;
     padding:18px 22px;
     border-radius:18px;
-    font-size:16px;
     line-height:1.7;
 }
 
-/* Input Area */
+/* Input */
 
-.input-area{
+.input-box{
     padding:20px 30px;
     border-top:1px solid #e5e5e5;
     position:relative;
 }
 
-.input-area textarea{
+#prompt{
     width:100%;
     height:65px;
     border:1px solid #ddd;
@@ -139,19 +127,18 @@ body{
     resize:none;
     outline:none;
     padding:18px;
-    padding-right:65px;
-    font-size:16px;
-    font-family:'Inter',sans-serif;
+    padding-right:70px;
+    font:inherit;
 }
 
-.input-area textarea:focus{
+#prompt:focus{
     border-color:#111;
 }
 
 #send{
     position:absolute;
     right:45px;
-    bottom:35px;
+    bottom:32px;
 
     width:42px;
     height:42px;
@@ -170,7 +157,7 @@ body{
     background:#333;
 }
 
-/* Responsive */
+/* Mobile */
 
 @media (max-width:900px){
 
@@ -182,13 +169,13 @@ body{
         padding:20px;
     }
 
-    .input-area{
+    .input-box{
         padding:15px;
     }
 
     #send{
         right:28px;
-        bottom:28px;
+        bottom:27px;
     }
 
 }
