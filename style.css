@@ -37,15 +37,14 @@ nav{
 
 nav ul{
     display:flex;
+    align-items:center;
     gap:28px;
     list-style:none;
-    align-items:center;
 }
 
 nav ul li a{
     text-decoration:none;
     color:#111;
-    font-size:15px;
 }
 
 .right{
