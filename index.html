@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>WellXAI</title>
 
     <!-- Google Font -->
@@ -16,101 +13,89 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
 </head>
-
 <body>
 
 <header>
 
-<nav class="navbar">
+    <nav class="navbar">
 
-<div class="logo">
-WellXAI
-</div>
+        <div class="logo">
+            WellX<span>AI</span>
+        </div>
 
-<ul class="menu">
+        <ul class="menu">
 
-<li><a href="#">Research</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Foundation</a></li>
 
-<li><a href="#">Products</a></li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </li>
 
-<li><a href="#">Business</a></li>
+        </ul>
 
-<li><a href="#">Developers</a></li>
+        <div class="right-menu">
 
-<li><a href="#">Company</a></li>
+            <a href="login.html" class="login-btn">
+                Log in
+            </a>
 
-<li><a href="#">Foundation</a></li>
+            <a href="#" class="try-btn">
+                Try WellXChat
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
 
-<li>
-<a href="#">
-<i class="fa-solid fa-magnifying-glass"></i>
-</a>
-</li>
+        </div>
 
-</ul>
-
-<div class="right-menu">
-
-<a href="login.html" class="login">
-Log in
-</a>
-
-<a href="#" class="try-btn">
-Try WellXChat
-<i class="fa-solid fa-arrow-up-right-from-square"></i>
-</a>
-
-</div>
-
-</nav>
+    </nav>
 
 </header>
 
 <main class="hero">
 
-<h1>
-What can I help with?
-</h1>
+    <h1>
+        What can I help with?
+    </h1>
 
-<div class="chat-container">
+    <div class="chat-box">
 
-<textarea
-id="prompt"
-placeholder="Message WellXAI..."
-rows="5"></textarea>
+        <textarea
+            id="prompt"
+            placeholder="Message WellXAI..."
+            rows="4">
+        </textarea>
 
-<button class="send-btn">
+        <button class="send-btn">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
 
-<i class="fa-solid fa-arrow-up"></i>
+    </div>
 
-</button>
+    <div class="quick-actions">
 
-</div>
+        <button>Talk with WellXChat</button>
+        <button>Research</button>
+        <button>API Platform</button>
+        <button>Stories</button>
+        <button>More</button>
 
-<div class="quick-actions">
-
-<button>Talk with WellXChat</button>
-
-<button>Research</button>
-
-<button>API Platform</button>
-
-<button>Stories</button>
-
-<button>More</button>
-
-</div>
+    </div>
 
 </main>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
