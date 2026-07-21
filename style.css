@@ -1,1 +1,244 @@
+/* =========================
+   WELLXAI - STYLE.CSS
+========================= */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#ffffff;
+    color:#111111;
+}
+
+/* HEADER */
+
+header{
+    width:100%;
+    border-bottom:1px solid #ececec;
+    background:#fff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    max-width:1300px;
+    margin:auto;
+    height:80px;
+    padding:0 40px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    cursor:pointer;
+}
+
+.logo span{
+    font-weight:400;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+    align-items:center;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#111;
+    font-size:15px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#555;
+}
+
+.right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.login{
+    text-decoration:none;
+    color:#111;
+    font-weight:500;
+}
+
+.button{
+    text-decoration:none;
+    background:#111;
+    color:#fff;
+    padding:13px 24px;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.button:hover{
+    background:#333;
+}
+
+/* HERO */
+
+.hero{
+    min-height:85vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px 20px;
+}
+
+.hero h1{
+    font-size:64px;
+    font-weight:700;
+    margin-bottom:40px;
+}
+
+/* CHAT BOX */
+
+.chat-box{
+
+    width:850px;
+    max-width:95%;
+
+    background:#fff;
+
+    border:1px solid #ddd;
+
+    border-radius:25px;
+
+    display:flex;
+    align-items:center;
+
+    padding:10px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.chat-box input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    padding:18px;
+
+    font-size:18px;
+
+}
+
+.chat-box button{
+
+    width:56px;
+    height:56px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:#111;
+
+    color:#fff;
+
+    cursor:pointer;
+
+}
+
+/* ACTION BUTTONS */
+
+.actions{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    margin-top:25px;
+
+}
+
+.actions button{
+
+    border:none;
+
+    background:#f3f3f3;
+
+    padding:14px 22px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.actions button:hover{
+
+    background:#111;
+
+    color:#fff;
+
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+nav{
+
+flex-direction:column;
+
+height:auto;
+
+padding:20px;
+
+gap:20px;
+
+}
+
+nav ul{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.chat-box{
+
+width:100%;
+
+}
+
+}
