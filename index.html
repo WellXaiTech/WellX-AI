@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>WellXAI</title>
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
 <header>
 
-<nav>
+<nav class="navbar">
 
 <div class="logo">
-WellX<span>AI</span>
+WellXAI
 </div>
 
-<ul>
+<ul class="menu">
 
 <li><a href="#">Research</a></li>
+
 <li><a href="#">Products</a></li>
+
 <li><a href="#">Business</a></li>
+
 <li><a href="#">Developers</a></li>
+
 <li><a href="#">Company</a></li>
+
 <li><a href="#">Foundation</a></li>
 
 <li>
@@ -45,14 +55,15 @@ WellX<span>AI</span>
 
 </ul>
 
-<div class="right">
+<div class="right-menu">
 
 <a href="login.html" class="login">
 Log in
 </a>
 
-<a href="#" class="button">
+<a href="#" class="try-btn">
 Try WellXChat
+<i class="fa-solid fa-arrow-up-right-from-square"></i>
 </a>
 
 </div>
@@ -61,20 +72,20 @@ Try WellXChat
 
 </header>
 
-<section class="hero">
+<main class="hero">
 
 <h1>
-WellX AI | Research & Deployment
+What can I help with?
 </h1>
 
-<div class="chat-box">
+<div class="chat-container">
 
-<input
+<textarea
 id="prompt"
-type="text"
-placeholder="Message WellXAI">
+placeholder="Message WellXAI..."
+rows="5"></textarea>
 
-<button>
+<button class="send-btn">
 
 <i class="fa-solid fa-arrow-up"></i>
 
@@ -82,7 +93,7 @@ placeholder="Message WellXAI">
 
 </div>
 
-<div class="actions">
+<div class="quick-actions">
 
 <button>Talk with WellXChat</button>
 
@@ -96,9 +107,10 @@ placeholder="Message WellXAI">
 
 </div>
 
-</section>
+</main>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
