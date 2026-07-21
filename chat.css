@@ -1,1 +1,192 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
+body{
+    font-family:'Inter',sans-serif;
+    background:#ffffff;
+    color:#111;
+}
+
+.container{
+    display:flex;
+    height:100vh;
+}
+
+/* Sidebar */
+
+.sidebar{
+    width:270px;
+    background:#f8f8f8;
+    border-right:1px solid #e5e5e5;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:800;
+    margin-bottom:25px;
+}
+
+.new-chat{
+    width:100%;
+    border:none;
+    background:#111;
+    color:#fff;
+    padding:14px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:15px;
+    margin-bottom:25px;
+}
+
+.new-chat:hover{
+    background:#333;
+}
+
+.history p{
+    color:#777;
+    font-size:13px;
+    margin-bottom:12px;
+}
+
+.history button{
+    width:100%;
+    border:none;
+    background:transparent;
+    text-align:left;
+    padding:12px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+    margin-bottom:6px;
+}
+
+.history button:hover{
+    background:#ececec;
+}
+
+/* Main */
+
+.chat-area{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+} /* Top Bar */
+
+.topbar{
+    height:70px;
+    padding:0 30px;
+    border-bottom:1px solid #e5e5e5;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.topbar h2{
+    font-size:22px;
+    font-weight:700;
+}
+
+.top-icons{
+    display:flex;
+    gap:18px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.top-icons i:hover{
+    color:#555;
+}
+
+/* Messages */
+
+.messages{
+    flex:1;
+    padding:40px;
+    overflow-y:auto;
+}
+
+.ai-message{
+    max-width:700px;
+    background:#f4f4f4;
+    padding:18px 22px;
+    border-radius:18px;
+    font-size:16px;
+    line-height:1.7;
+}
+
+/* Input Area */
+
+.input-area{
+    padding:20px 30px;
+    border-top:1px solid #e5e5e5;
+    position:relative;
+}
+
+.input-area textarea{
+    width:100%;
+    height:65px;
+    border:1px solid #ddd;
+    border-radius:18px;
+    resize:none;
+    outline:none;
+    padding:18px;
+    padding-right:65px;
+    font-size:16px;
+    font-family:'Inter',sans-serif;
+}
+
+.input-area textarea:focus{
+    border-color:#111;
+}
+
+#send{
+    position:absolute;
+    right:45px;
+    bottom:35px;
+
+    width:42px;
+    height:42px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#111;
+    color:#fff;
+
+    cursor:pointer;
+    font-size:16px;
+}
+
+#send:hover{
+    background:#333;
+}
+
+/* Responsive */
+
+@media (max-width:900px){
+
+    .sidebar{
+        display:none;
+    }
+
+    .messages{
+        padding:20px;
+    }
+
+    .input-area{
+        padding:15px;
+    }
+
+    #send{
+        right:28px;
+        bottom:28px;
+    }
+
+}
