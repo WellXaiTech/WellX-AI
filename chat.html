@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WellXChat</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="chat.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            WellXAI
+        </div>
+
+        <button class="new-chat">
+            <i class="fa-solid fa-plus"></i>
+            New Chat
+        </button>
+
+        <div class="history">
+
+            <p>Today</p>
+
+            <button>Welcome</button>
+            <button>Research</button>
+            <button>Programming</button>
+
+        </div>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="chat-area">
+
+        <header class="topbar">
+
+            <h2>WellXChat</h2>
+
+            <div class="top-icons">
+
+                <i class="fa-solid fa-gear"></i>
+                <i class="fa-solid fa-user"></i>
+
+            </div>
+
+        </header>
+
+        <section class="messages">
+
+            <div class="ai-message">
+                👋 Hello! How can I help you today?
+            </div>
+
+        </section>
+
+        <div class="input-area">
+
+            <textarea
+                id="message"
+                placeholder="Message WellXAI..."></textarea>
+
+            <button id="send">
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="chat.js"></script>
+
+</body>
+</html>
